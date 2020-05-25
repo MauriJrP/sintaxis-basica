@@ -1,29 +1,47 @@
+/* ---------Estilos generales a toda la pagina--------- */
+body {
+  background-color: #d3d3d3;
+  /* background-image: url("Imagenes/background-image-2.jpg");
+  background-size: cover; */
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  color: #088A08;
+}
+
 .principal {
   text-align: center;
-  font-size: 4rem;
-  margin: 3rem;
+  font-size: 3.5em;
 }
 
-body {
-  background-color: lightgray;
-  text-decoration: none;
-}
-
-.card {
-  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  background-color: gainsboro;
+/* ----------------Estilos de la grilla----------------- */
+.grid {
+  display: grid;
+  grid-template-columns: 32.5% 32.5% 32.5%;
+  grid-template-rows: auto;
+  gap: 1em;
   text-align: center;
-  display: block;
-  margin: auto;
-  border-radius: 30%;
-  text-decoration: none;
-  color: #050505;
-  width: 33%;
-  padding: 10px;
-  align-content: center;
+  /* padding: 5px; */
 }
 
+div a:hover {
+  box-shadow: 5px 1px 8px 5px #888888;
+  
+}
+
+div a {
+  padding: 10px;
+  background-color: #c5c5c5;
+  border: 1px solid #b7b7b7;
+  /* padding: 5px; */
+}
+
+/* -----------------Estilos de la sintaxis--------------- */
 .comandos {
   color: #a76727;
   font-size: 1.2rem;
