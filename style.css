@@ -1,0 +1,30 @@
+.principal {
+  text-align: center;
+  font-size: 4rem;
+  margin: 3rem;
+}
+
+body {
+  background-color: lightgray;
+  text-decoration: none;
+}
+
+.card {
+  box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  background-color: gainsboro;
+  text-align: center;
+  display: block;
+  margin: auto;
+  border-radius: 30%;
+  text-decoration: none;
+  color: #050505;
+  width: 33%;
+  padding: 10px;
+  align-content: center;
+}
+
+.comandos {
+  color: #a76727;
+  font-size: 1.2rem;
+}
