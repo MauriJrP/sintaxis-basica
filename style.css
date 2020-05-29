@@ -34,34 +34,6 @@ a {
   /* justify-content: ; */
   /* justify-content: center; */
 }
-
-/* -------------------------Footer---------------------- */
-.footer{
-  width: 100%;
-  margin: 0%;
-  padding: 1rem 0;
-  background-color: #171717c4;
-  height: 10%;
-  color: white;
-  text-align: left;
-}
-
-.footer__ul {
-  margin: 0%;
-  list-style: none;
-  /* padding: 1rem 0; */
-}
-
-.footer__li {
-  padding: .5rem 0;
-}
-
-.footer__image {
-  width: 2rem;
-  margin: 0%;
-}
-
-
 /* ----------------Estilos de la grilla----------------- */
 .grid {
   display: grid;
@@ -72,9 +44,9 @@ a {
   text-align: center;
 }
 
-.container__section {
+/* .container__section {
   
-}
+} */
 
 .card {
   padding: 10px;
@@ -100,6 +72,32 @@ a {
 .card__add:hover {
   background-size: 125px;
   border-width: .3rem;
+}
+/* -------------------------Footer---------------------- */
+.footer{
+  width: 100%;
+  margin: 0%;
+  padding: 1rem 0;
+  background-color: #171717c4;
+  height: 10%;
+  color: white;
+  text-align: left;
+  display: inline;
+}
+
+.footer__ul {
+  margin: 0%;
+  list-style: none;
+  /* padding: 1rem 0; */
+}
+
+.footer__li {
+  padding: .5rem 0;
+}
+
+.footer__image {
+  width: 2rem;
+  margin: 0%;
 }
 /* -----------------Estilos de la sintaxis--------------- */
 .comandos {
