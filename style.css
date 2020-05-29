@@ -14,29 +14,66 @@ a {
   padding: 0%;
   margin: 0%;
   width: 100%;
-  text-align: center;
 }
 /* ------------------Header----------------------------- */
+.header {
+  width: 100%;
+  margin: 0%;
+  background-color: #171717;
+  height: 10%;
+  color: white;
+}
+
 .header__title {
   display: flex;
-  width: 100%;
-  font-size: 3.5em;
-  margin-top: 0px;
-  background-color: #171717;
-  color: white;
-  height: 10%;
+  margin: 0px;
+  padding: 0 2rem;
+  font-size: 3.5rem;
   min-height: 120px;
   align-items: center;
-  justify-content: center;
+  /* justify-content: ; */
+  /* justify-content: center; */
 }
+
+/* -------------------------Footer---------------------- */
+.footer{
+  width: 100%;
+  margin: 0%;
+  padding: 1rem 0;
+  background-color: #171717c4;
+  height: 10%;
+  color: white;
+  text-align: left;
+}
+
+.footer__ul {
+  margin: 0%;
+  list-style: none;
+  /* padding: 1rem 0; */
+}
+
+.footer__li {
+  padding: .5rem 0;
+}
+
+.footer__image {
+  width: 2rem;
+  margin: 0%;
+}
+
+
 /* ----------------Estilos de la grilla----------------- */
 .grid {
   display: grid;
-  margin: 0px 10% 0% 10%;
+  margin: 6rem 10%;
   gap: 1em;
   grid-template-columns: repeat(3, 3fr);
   grid-auto-rows: auto;
   text-align: center;
+}
+
+.container__section {
+  
 }
 
 .card {
@@ -44,6 +81,7 @@ a {
   border-radius: 1.5rem;
   background-color: #3da4ab;
   border: 1px solid #cf3476;
+  max-height: 12rem;
 }
 
 .grid__link-card:hover {
