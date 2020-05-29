@@ -6,23 +6,20 @@ body {
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
   color: #000;
 }
-
 .container {
   padding: 0%;
   margin: 0%;
   width: 100%;
   text-align: center;
 }
-
 /* ------------------Header----------------------------- */
-
 .header__title {
   display: flex;
+  width: 100%;
   font-size: 3.5em;
   margin-top: 0px;
   background-color: #171717;
@@ -32,37 +29,40 @@ a {
   align-items: center;
   justify-content: center;
 }
-
 /* ----------------Estilos de la grilla----------------- */
-
 .grid {
   display: grid;
   margin: 0px 10% 0% 10%;
   gap: 1em;
   grid-template-columns: repeat(3, 3fr);
   grid-auto-rows: auto;
-  /* gap: 1em; */
-
-  /* grid-column-gap: 1em 1em 1em; */
   text-align: center;
-  /* padding: 5px; */
 }
 
-.grid__enlace:hover {
-  box-shadow: 5px 1px 8px 5px #cf3476;
-  color: #cf3476;
-
-  
-}
-
-.grid__enlace {
+.card {
   padding: 10px;
+  border-radius: 1.5rem;
   background-color: #3da4ab;
   border: 1px solid #cf3476;
-  /* padding: 5px; */
 }
 
+.grid__link-card:hover {
+  box-shadow: 5px 1px 8px 5px #cf3476;
+  color: #cf3476;
+}
 
+.card__add {
+  background-image: url(Imagenes/add.png);
+  background-size: 100px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: .2rem dashed #171717;
+}
+
+.card__add:hover {
+  background-size: 125px;
+  border-width: .3rem;
+}
 /* -----------------Estilos de la sintaxis--------------- */
 .comandos {
   color: #a76727;
