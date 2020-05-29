@@ -22,7 +22,15 @@ a {
 /* ------------------Header----------------------------- */
 
 .header__title {
+  display: flex;
   font-size: 3.5em;
+  margin-top: 0px;
+  background-color: #171717;
+  color: white;
+  height: 10%;
+  min-height: 120px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ----------------Estilos de la grilla----------------- */
