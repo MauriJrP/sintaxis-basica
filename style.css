@@ -31,8 +31,6 @@ a {
   font-size: 3.5rem;
   min-height: 120px;
   align-items: center;
-  /* justify-content: ; */
-  /* justify-content: center; */
 }
 /* ----------------Estilos de la grilla----------------- */
 .grid {
@@ -44,9 +42,9 @@ a {
   text-align: center;
 }
 
-/* .container__section {
-  
-} */
+.container__section {
+  border-radius: 1.5rem;
+}
 
 .card {
   padding: 10px;
@@ -74,7 +72,7 @@ a {
   border-width: .3rem;
 }
 /* -------------------------Footer---------------------- */
-.footer{
+.footer {
   width: 100%;
   margin: 0%;
   padding: 1rem 0;
@@ -82,13 +80,12 @@ a {
   height: 10%;
   color: white;
   text-align: left;
-  display: inline;
 }
 
 .footer__ul {
+  bottom: 0;
   margin: 0%;
   list-style: none;
-  /* padding: 1rem 0; */
 }
 
 .footer__li {
