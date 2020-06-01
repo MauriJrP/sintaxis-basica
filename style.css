@@ -41,15 +41,6 @@ a {
   /* display: inline; */
   width: 10em;
 }
-.main__title {
-  display: inline;
-  margin: 0px;
-  padding: 0;
-  font-size: 3.5rem;
-  min-height: 120px;
-  align-items: center;
-
-}
 .header__ul {
   list-style: none;
   margin: 0;
@@ -64,6 +55,33 @@ a {
 }
 .header__link:hover {
   color: #ffee00;
+}
+/* ----------------Estilos del main----------------- */
+.main {
+  display: block;
+  margin-top: 9vh;
+  background-image: url(Imagenes/fondo-2.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: 91vh;
+  width: 100%;
+  
+}
+.main__transparent {
+  height: inherit;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .7);
+}
+.main__title {
+  /* display: inline; */
+  margin: 0;
+  padding-top: 30vh;
+  width: 50%;
+  font-size: 13vh;
+  align-items: center;
+  color: white;
+  /* min-height: 120px; */
 }
 /* ----------------Estilos de la grilla----------------- */
 .grid {
