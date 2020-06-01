@@ -63,10 +63,9 @@ a {
   background-image: url(Imagenes/fondo-2.jpg);
   /* background-repeat: no-repeat; */
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   height: 91vh;
   width: 100%;
-  
 }
 .main__transparent {
   height: inherit;
@@ -74,14 +73,11 @@ a {
   background-color: rgba(0, 0, 0, .7);
 }
 .main__title {
-  /* display: inline; */
   margin: 0;
   padding-top: 30vh;
-  width: 50%;
-  font-size: 12.5vh;
-  align-items: center;
+  width: 70%;
+  font-size: 9em;
   color: white;
-  /* min-height: 120px; */
 }
 /* ----------------Estilos de la grilla----------------- */
 .grid {
@@ -104,7 +100,7 @@ a {
   max-height: 12rem;
 }
 .grid__link-card:hover {
-  box-shadow: 5px 1px 8px 5px #cf3476;
+  box-shadow: 1vh 1vh 10px 0px #cf3476;
   color: #cf3476;
   background-position: right center;
 }
