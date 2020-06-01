@@ -30,7 +30,7 @@ a {
   width: 100%;
   margin: 0%;
   background-color: #171717;
-  min-height: 9vh;
+  height: 9vh;
   color: white;
   justify-content: space-around;
   align-items: center;
@@ -39,7 +39,7 @@ a {
 }
 .header__logo {
   /* display: inline; */
-  width: 10em;
+  width: 25vh;
 }
 .header__ul {
   list-style: none;
@@ -110,6 +110,7 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   border: .2rem dashed #171717;
+  min-height: 192px;
 }
 .card__add:hover {
   background-size: 125px;
@@ -142,4 +143,23 @@ a {
 .comandos {
   color: #a76727;
   font-size: 1.2rem;
+}
+/* -----------------Responsive--------------- */
+@media screen and (max-width: 900px){
+  .grid {
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: auto;
+  }
+  /* .card__add {
+    min-height: 200px;
+  } */
+}
+@media screen and (max-width: 500px){
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7 7fr);
+  }
+  .card {
+    min-height: 38vh;
+  }
 }
