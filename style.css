@@ -147,7 +147,7 @@ a {
   color: #a76727;
   font-size: 1.2rem;
 }
-/* -----------------Responsive--------------- */
+/* -----------------Responsive-Tablet--------------- */
 @media screen and (max-width: 900px){
   .grid {
     grid-template-columns: 2fr 2fr;
@@ -157,10 +157,17 @@ a {
     min-height: 200px;
   } */
 }
+/* -----------------Responsive-Mobile--------------- */
 @media screen and (max-width: 500px){
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7 7fr);
+  }
+  .header {
+    justify-content: space-between;
+  }
+  .header__logo {
+    padding-left: .5em;
   }
   .card {
     min-height: 38vh;
