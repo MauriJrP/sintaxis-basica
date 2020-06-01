@@ -104,6 +104,9 @@ a {
   color: #cf3476;
   background-position: right center;
 }
+.card__image {
+  height: 100px;
+}
 .card__add {
   background-image: url(Imagenes/add.png);
   background-size: 100px;
@@ -161,5 +164,17 @@ a {
   }
   .card {
     min-height: 38vh;
+  }
+  .card__image {
+    height: 150px;
+  }
+  .card__subtitle {
+    font-size: 2em;
+  }
+  .header__ul {
+    display: none;
+  }
+  .main__title {
+    font-size: 100px;
   }
 }
