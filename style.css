@@ -2,8 +2,8 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #0093E9;
-  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  background-color: #a59900;
+  background-image: linear-gradient(90deg, #a59900 0%, #f1fa70 50%, #aaaf00 100%);  
   margin: 0;
   padding: 0;
 }
@@ -61,7 +61,6 @@ a {
   display: block;
   margin-top: 9vh;
   background-image: url(Imagenes/fondo-2.jpg);
-  /* background-repeat: no-repeat; */
   background-size: cover;
   background-attachment: fixed;
   height: 91vh;
@@ -69,12 +68,14 @@ a {
 }
 .main__transparent {
   height: inherit;
-  text-align: center;
   background-color: rgba(0, 0, 0, .7);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .main__title {
-  margin: 0;
-  padding-top: 30vh;
+  margin: auto;
   width: 70%;
   font-size: 9em;
   color: white;
@@ -95,13 +96,13 @@ a {
 .card {
   padding: 10px;
   border-radius: 1.5rem;
-  background-color: #53c7cf;
-  border: 1px solid #cf3476;
+  background-color: #ffffff;
+  border: .15rem solid black;
   max-height: 12rem;
 }
 .grid__link-card:hover {
-  box-shadow: 1vh 1vh 10px 0px #cf3476;
-  color: #cf3476;
+  box-shadow: 1.5vh 1.5vh 10px 0px black;
+  font-size: 1.1em;
   background-position: right center;
 }
 .card__image {
@@ -126,7 +127,7 @@ a {
   text-align: center;
   min-height: 75vh;
 }
-.team__title {
+.title-section {
   text-align: left;
   font-size: 3em;
   margin: 0;
@@ -139,7 +140,7 @@ a {
   width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(5, 5fr);
+  grid-template-columns: repeat(4, 4fr);
   padding: 3em 0;
   column-gap: 1em;
 }
@@ -148,6 +149,8 @@ a {
   border-radius: 1em;
   border: 2px solid black;
   padding: 1em;
+  /* background: #f1fa70; */
+  background: #ffffff;
 }
 .team__card:hover {
   box-shadow: 1vh 1vh 10px 0px black;
@@ -155,7 +158,7 @@ a {
   font-size: 1.05em;
 }
 .team__photo {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 .fa-user {
   font-size: 7em;
@@ -203,6 +206,13 @@ a {
     grid-template-columns: 2fr 2fr;
     grid-auto-rows: auto;
   }
+  .main__title {
+    font-size: 6em;
+  }
+  .team__section {
+    grid-template-columns: repeat(3, 3fr);
+    grid-auto-rows: auto;
+  }
   /* .card__add {
     min-height: 200px;
   } */
@@ -220,7 +230,6 @@ a {
     padding-left: .5em;
   }
   .main__title {
-    padding-left: .5em;
     font-size: 4em;
   }
   .card {
@@ -239,15 +248,15 @@ a {
     font-size: 80px;
   } */
   .team__section {
-    width: 80%;
+    /* width: 80%;
     margin: auto;
-    display: grid;
+    display: grid; */
     grid-template-columns: 1fr;
     grid-auto-rows: auto;
-    padding: 3em 0;
-    column-gap: 1em;
+    /* padding: 3em 0; */
+    /* column-gap: 1em; */
   }
-  .team__title {
+  .title-section {
     text-align: center;
     font-size: 2.5em;
     margin: 0;
