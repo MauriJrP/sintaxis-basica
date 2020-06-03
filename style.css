@@ -199,8 +199,13 @@ a {
 }
 /* -----------------Estilos de la sintaxis--------------- */
 .comandos {
-  color: #a76727;
-  font-size: 1.2rem;
+  display: grid;
+  margin: 6rem 10%;
+  gap: 1em;
+  grid-template-columns: repeat(3, 3fr);
+  grid-template-rows: repeat(3, 3fr);
+  /* grid-auto-rows: auto; */
+  text-align: center;
 }
 /* -----------------Responsive-Tablet--------------- */
 @media screen and (max-width: 900px){

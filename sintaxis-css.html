@@ -1,87 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sintaxis CSS</title>
+    <title>Sintaxis B&aacute;sica</title>
+    <link rel="shortcut icon" href="Imagenes/logo.png">
+    <script src="https://kit.fontawesome.com/28e7aac626.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+    <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <h1>Sintaxis CSS</h1>
-    <h2>Background</h2>
-    <p>
-        <span class="comandos">Background</span> <br> Colocar fondo
-    </p>
-    <p>
-        <span class="comandos">Background-color</span> <br> Colocar color de fondo
-    </p>
-    <p>
-        <span class="comandos">Background-imgae: url()</span> <br>Colocar imagen de fondo, usar ../ para retroceder una
-        carpeta en la ubicacion
-    </p>
-    <p>
-        <span class="comandos">Background-position</span> <br>Posicionar la parte de la imagen que queremos
-    </p>
-    <p>
-        <span class="comandos">Background-size</span> <br>El tamaño de la imagen en el espacio determinado
-    </p>
-    <p>
-        <span class="comandos">Height</span> <br>Altura que ocupara el fondo
-    </p>
-    <p>
-        <span class="comandos">Min Height</span> <br>Altura minima del fondo
-    </p>
-    <h2>Margin</h2>
-    <p>
-        <span class="comandos">Max width</span> <br>Ancho maximo
-    </p>
-    <p>
-        <span class="comandos">Margin</span> <br>Da el margen con el valor que queremos por lado
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <h2>Flexbox</h2>
-    <p>
-        <span class="comandos">Display: flex;</span> <br> Activa el flexbox
-    </p>
-    <p>
-        <span class="comandos">justify-content</span> <br>Puedes acomodar tu contenido
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <h2>Posicionamiento</h2>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-    <p>
-        <span class="comandos"></span> <br>
-    </p>
-</body>
-
+  </head>
+  <body>
+    <div class="container">
+      <!-- ---------------------Header------------------------- -->
+      <header class="header">
+        <div class="header__logo">
+          <a href="https://maurijrp.github.io/sintaxis-basica/">
+            <img src="Imagenes/logo-sb.png" alt="Logo de sintaxis basica">
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__li">
+              <a href="#footer" class="header__link">
+                Contacto
+              </a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">
+                Mi Portafolio
+              </a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <i class="fas fa-bars"></i>
+        </nav>
+      </header>
+      <!-- ---------------------main------------------------- -->
+      <section class="main">
+        <div class="main__transparent">
+          <h1 class="main__title">Sintaxis Css</h1>
+        </div>
+      </section>
+      <!-- --------------------- Section ------------------------- -->
+      <h2 class="title-section">Comandos</h2>
+      <div class="comandos">
+        <h2>Background</h2>
+        <p>
+          Background<br> Colocar fondo
+        </p>
+        <p>
+          Background-color<br> Colocar color de fondo
+        </p>
+        <p>
+          Background-imgae: url()<br>Colocar imagen de fondo, usar ../ para retroceder una
+          carpeta en la ubicacion
+        </p>
+        <p>
+          Background-position<br>Posicionar la parte de la imagen que queremos
+        </p>
+        <p>
+          Background-size<br>El tamaño de la imagen en el espacio determinado
+        </p>
+        <p>
+          Height<br>Altura que ocupara el fondo
+        </p>
+        <p>
+          Min Height<br>Altura minima del fondo
+        </p>
+        <h2>Margin</h2>
+        <p>
+          Max width<br>Ancho maximo
+        </p>
+        <p>
+          Margin<br>Da el margen con el valor que queremos por lado
+        </p>
+        <h2>Flexbox</h2>
+        <p>
+          Display: flex;<br> Activa el flexbox
+        </p>
+        <p>
+          justify-content<br>Puedes acomodar tu contenido
+        </p>
+        <h2>Posicionamiento</h2>
+      </div>
+      <footer class="footer" id="footer">
+        <ul class="footer__ul">
+          <li class="footer__li">
+            <a href="https://github.com/MauriJrP" target="_blank" class="footer__link">
+              <img src="Imagenes/github.png" alt="Logo de github" class="footer__image">
+            </a>
+          </li>
+          <li class="footer__li">
+            <a href="https://instagram.com/mauri_jrp" target="_blank" class="footer__link">
+              <img src="Imagenes/instagram.png" alt="Logo de instagram" class="footer__image">
+            </a>
+          </li>
+        </ul>
+        <div class="contribution">
+          <h3>Contribuye al proyecto</h3>
+          <button>Contribuir</button>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
