@@ -34,7 +34,7 @@ a {
   color: white;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  position: sticky;
   z-index: 100;
 }
 .header__logo {
@@ -56,10 +56,12 @@ a {
 .header__link:hover {
   color: #ffee00;
 }
+.fa-bars {
+  display: none;
+}
 /* ----------------Estilos del main----------------- */
 .main {
   display: block;
-  margin-top: 9vh;
   background-image: url(Imagenes/fondo-2.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -219,6 +221,11 @@ a {
 }
 /* -----------------Responsive-Mobile--------------- */
 @media screen and (max-width: 500px){
+  .fa-bars {
+    display: inline;
+    margin-right: 1.5em;
+    font-size: 1.5em;
+  }
   .grid {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(7 7fr);
@@ -234,12 +241,15 @@ a {
   }
   .card {
     min-height: 38vh;
+    overflow: hidden;
   }
   .card__image {
-    height: 150px;
+    height: 10em;
+    /* margin: 20px; */
   }
   .card__subtitle {
-    font-size: 2em;
+    font-size: 2.5em;
+    margin: 10px 0 20px;
   }
   .header__ul {
     display: none;
