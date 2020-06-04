@@ -207,9 +207,9 @@ a {
   text-align: center;
 }
 .subtheme__card {
-  max-height: 65px;
+  max-height: 64px;
   border: 3px solid black;
-  transition: all 1.5s;
+  transition: all 1.5s, box-shadow .4s;
   overflow: hidden;
 }
 .subtheme__card:hover{
@@ -218,7 +218,7 @@ a {
 }
 .subtheme__card:hover h3 {
   margin: 0;
-  line-height: 65px;
+  line-height: 64px;
   color: white;
   background: #171717;
   font-size: 1.5em;
