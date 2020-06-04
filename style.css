@@ -204,25 +204,33 @@ a {
   gap: 1em;
   grid-template-columns: repeat(3, 3fr);
   grid-auto-rows: auto;
-  /* grid-auto-rows: auto; */
   text-align: center;
 }
 .subtheme__card {
-  max-height: 70px;
+  max-height: 65px;
   border: 3px solid black;
-  /* overflow: hidden; */
-  transition: max-height 2s;
+  transition: all 1.5s;
+  overflow: hidden;
 }
 .subtheme__card:hover{
-  box-shadow: 1.5vh 1.5vh 10px 0px black;
+  box-shadow: 1.5vh 1.5vh 10px 0px #171717;
   max-height: 800px;
 }
-.subtheme__comands {
-  display: none;
+.subtheme__card:hover h3 {
+  margin: 0;
+  line-height: 65px;
+  color: white;
+  background: #171717;
+  font-size: 1.5em;
 }
-.subtheme__card:hover > .subtheme__comands{
-  display: unset;
+.subtheme__comands h4{
+  margin: 0;
+  background: white;
+  font-size: 1.2em;
 }
+/* .subtheme__card:hover > .subtheme__comands{
+  display: block;
+} */
 /* -----------------Responsive-Tablet--------------- */
 @media screen and (max-width: 900px){
   .grid {
