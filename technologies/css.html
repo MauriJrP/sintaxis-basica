@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sintaxis B&aacute;sica</title>
-    <link rel="shortcut icon" href="Imagenes/logo.png">
+    <link rel="shortcut icon" href="../images/logo.png">
     <script src="https://kit.fontawesome.com/28e7aac626.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
     <div class="container">
@@ -16,7 +16,7 @@
       <header class="header">
         <div class="header__logo">
           <a href="https://maurijrp.github.io/sintaxis-basica/">
-            <img src="Imagenes/logo-sb.png" alt="Logo de sintaxis basica">
+            <img src="../images/logo-sb.png" alt="Logo de sintaxis basica">
           </a>
         </div>
         <nav class="header__nav">
@@ -46,25 +46,43 @@
           <h1 class="main__title">Sintaxis Css</h1>
         </div>
       </section>
-      <!-- --------------------- Section ------------------------- -->
-      <h2 class="title-section">Comandos</h2>
+      <!-- --------------------- Description ---------------------- -->
+      <h2 class="title-section">Descripci&oacute;n</h2>
+      <div class="description">
+        <div class="description__card">
+          <h3>¿Qué es Css?</h3>
+          <p class="description__text">
+            CSS (Cascading Style Sheets) es lo que se denomina lenguaje de hojas de estilo en cascada y se usa para estilizar elementos escritos en un lenguaje de marcado como HTML. <br>CSS ayuda a los desarrolladores web a crear una apariencia uniforme en varias páginas de un sitio web. Los estilos de uso común deben definirse solo una vez en un documento CSS. Una vez que el estilo se define en una hoja de estilos en cascada, puede ser utilizado por cualquier página que haga referencia al archivo CSS.
+          </p>
+        </div>
+        <img src="../images/css.png" alt="Logo de css" class="description__image">
+      </div>
+      <!-- --------------------- Comands ------------------------- -->
+      <h2 class="title-section">Sintaxis</h2>
       <div class="subtheme">
         <div class="subtheme__card">
           <h3>Estructura</h3>
           <div class="subtheme__comands">
-            
+            <p>Selector {<br>propiedad: valor<br>}
+            </p>
           </div>
         </div>
         <div class="subtheme__card">
           <h3>Selectores</h3>
           <div class="subtheme__comands">
-            
+            <h4 class="subtheme__comand">Universal</h4>
+            <h4 class="subtheme__comand">Elemento</h4>
+            <h4 class="subtheme__comand">Clase</h4>
+            <h4 class="subtheme__comand">Id</h4>
+            <h4 class="subtheme__comand">Atributo</h4>
+            <h4 class="subtheme__comand">Descendiente</h4>
+            <h4 class="subtheme__comand">Pseudo-clase</h4>
           </div>
         </div>
         <div class="subtheme__card">
           <h3>Especificidad</h3>
           <div class="subtheme__comands">
-            
+            <img src="../images/especificidad.png" alt="especificidad">
           </div>
         </div>
         <div class="subtheme__card">
@@ -119,14 +137,7 @@
         <div class="subtheme__card">
           <h3>Margin</h3>
           <div class="subtheme__comands">
-            <h4 class="subtheme__comand">
-              Max width 
-            </h4>
-            <p>maximo</p>
-            <h4 class="subtheme__comand">
-              Margin 
-            </h4>
-            <p>Da el margen con el valor que queremos por lado</p>
+
           </div>
         </div>
         <div class="subtheme__card">
@@ -138,14 +149,7 @@
         <div class="subtheme__card">
           <h3>Flexbox</h3>
           <div class="subtheme__comands">
-            <h4 class="subtheme__comand">
-              Display: flex; 
-            </h4>
-            <p>Activa el flexbox</p>
-            <h4 class="subtheme__comand">
-              justify-content 
-            </h4>
-            <p>Puedes acomodar tu contenido</p>
+
           </div>
         </div>
         <div class="subtheme__card">
@@ -159,20 +163,20 @@
         <ul class="footer__ul">
           <li class="footer__li">
             <a href="https://github.com/MauriJrP" target="_blank" class="footer__link">
-              <img src="Imagenes/github.png" alt="Logo de github" class="footer__image">
+              <img src="../images/github.png" alt="Logo de github" class="footer__image">
             </a>
           </li>
           <li class="footer__li">
             <a href="https://instagram.com/mauri_jrp" target="_blank" class="footer__link">
-              <img src="Imagenes/instagram.png" alt="Logo de instagram" class="footer__image">
+              <img src="../images/instagram.png" alt="Logo de instagram" class="footer__image">
             </a>
           </li>
         </ul>
-        <div class="contribution">
-          <h3>Contribuye al proyecto</h3>
-          <button>Contribuir</button>
+        <div class="footer__contribution">
+          <button class="footer__button">Contribuir</button>
         </div>
       </footer>
     </div>
+    <script src="../js/index.js"></script>
   </body>
 </html>
