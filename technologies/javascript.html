@@ -1,150 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sintaxis JavaScript</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sintaxis B&aacute;sica</title>
+  <link rel="shortcut icon" href="../images/logo.png">
+  <script src="https://kit.fontawesome.com/28e7aac626.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" href="../normalize.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <h1>Sintaxis JavaScript (Lenguaje de tipado dinamico, Diferencia mayusculas y minusculas)</h1>
-    <h2>Mostrar texto</h2>
-    <p>
-        <span class="comandos">Console.log()</span> <br>Mostrar en consola
-    </p>
-    <p>
-        <span class="comandos">Alert()</span> <br> Mostrar alerta
-    </p>
-    <p>
-        <span class="comandos">Prompt()</span> <br> Regresa el dato ingresado
-    </p>
-    <p>
-        <span class="comandos">Document.write(texto)</span> Muestra datos en el html
-    </p>
-    <h2>Variables y Constantes</h2>
-    <p>
-        <span class="comandos">Let</span> <br> Declarar una variable, Tienen alcanze dentro del bloque mas proximo
-    </p>
-    <p>
-        <span class="comandos">Var</span> <br> Declarar una variable, Tienen alcanze dentro de la funcion mas proxima
-    </p>
-    <p>
-        <span class="comandos">Const</span> <br> Declarar una constante, Tienen alcanze dentro del bloque mas proximo
-    </p>
-    <p>
-        <span class="comandos">Booleanos Con Valor False</span> <br> Undefined, NaN, null, 0, .0, "", false
-    </p>
-    <h2>Tipos de datos</h2>
-    <p>
-        <span class="comandos">Typeof</span> <br> Devuelve el tipo de dato de una variable
-    </p>
-    <p>
-        <span class="comandos">undefined</span> <br> Valor y tipo undefined, es cuando no definimos un valor a la variable
-    </p>
-    <p>
-        <span class="comandos">null</span> <br> Tipo de dato object, valor asignable, indica la ausencia de valor
-    </p>
-    <p>
-        <span class="comandos">NaN</span> <br> No es un numero
-    </p>
-    <p>
-        <span class="comandos">Infinity</span> <br> Valor infinito, da como resultado de una division entre 0
-    </p>
-    <h2>Operadores De Comparacion</h2>
-    <p>
-        <span class="comandos">===</span> <br> Comparar Tipo De Dato
-    </p>
-    <h2>Operadores Logicos</h2>
-    <p>
-        <span class="comandos">&&</span> <br> And
-    </p>
-    <p>
-        <span class="comandos">||</span> <br> Or
-    </p>
-    <p>
-        <span class="comandos">!</span> <br> Not
-    </p>
-    <h2>Condicionales</h2>
-    <p>
-        <span class="comandos">If(condicion){}</span> <br> Condiciona una opcion
-    </p>
-    <p>
-        <span class="comandos">Else if(condicion){}</span> <br> Condiciona mas de 1 opcion
-    </p>
-    <p>
-        <span class="comandos">Else{}</span> <br> Condicion Sino
-    </p>
-    <h2>Ciclos</h2>
-    <p>
-        <span class="comandos">While(condicion){}</span> <br> Ciclo mientras
-    </p>
-    <p>
-        <span class="comandos">Do{Instrucciones} while(condicion);</span> <br> Ciclo hacer mientras
-    </p>
-    <p>
-        <span class="comandos">For((VarInicial);(Condicion);(Incremento))</span> <br> Ciclo para
-    </p>
-    <h2>Funciones</h2>
-    <p>
-        <span class="comandos">Function (nombre)(){instrucciones}</span> <br> Declarar funciones
-    </p>
-    <p>
-        <span class="comandos">Function (){}</span> <br> Declarar funcion vacia, sirve para llamar a una funcion dentro de una funcion
-    </p>
-    <p>
-        <span class="comandos">nombre()</span> <br> Llamar funcion
-    </p>
-    <p>
-        <span class="comandos">return</span> <br> Sirve para regresar datos de una funcion, interrumpe la funcion al ejecutarse
-    </p>
-    <p>
-        <span class="comandos">Parametros</span> <br> Es la variable que colocamos al definir la funcion, si se pone, es obligatorio llenarlos
-    </p>
-    <p>
-        <span class="comandos">Argumentos</span> <br> Son los valores que le pasamos para llenar los parametros
-    </p>
-    <p>
-        <span class="comandos">Arguments[posicion]</span> <br> Permite usar argumentos que no estan definidos en los parametros
-    </p>
-    <h2>Arrows</h2>
-    <P>
-        <span class="comandos">let (nombre de la funcion) = (parametros)={instrucciones}</span> <br> Las arrows son una alternativa a las funciones, sirven para no hacer modificaciones del contexto
-    </P>
-    <h2>This</h2>
-    <p>
-        <span class="comandos">This.()</span> <br> Sirve para saver el contexto en el que se esta
-    </p>
-    <P>
-        <span class="comandos">function (nombre_opcional).call(contexto a asignar, argumentos)</span> <br> Sirve para asignar el contexto que deseamos a una funcion
-    </P>
-    <P>
-        <span class="comandos">function (nombre_opcional).apply(contexto a asignar, [argumentos])</span> <br> Sirve para asignar el contexto que deseamos a una funcion, los argumentos se escriben en forma de arreglo
-    </P>
-    <p>
-        <span class="comandos">nombre_funcion(llamar_funcion.bind(contexto a asignar))</span> <br> Sirve para asignar el contexto que deseamos a una funcion al momento de llamarla
-    </p>
-    <h2>Arreglos</h2>
-    <p>
-        <span class="comandos">let (nombre) = [datos]</span> <br> Declarar un arreglo
-    </p>
-    <p>
-        <span class="comandos">arreglo[indice]</span> <br> Devuelve el dato que hay en el indice
-    </p>
-    <p>
-        <span class="comandos">arreglo.length</span> <br> Devuelve la longitud del arreglo menos uno
-    </p>
-    <p>
-        <span class="comandos">arreglo.forEach(function(argumento){})</span> <br> Es otra alternativa al ciclo for
-    </p>
-    <p>
-        <span class="comandos">arreglo.filter(function(argumento){filtro})</span> <br> Sirve para hacer una filtracion en los datos del arreglo
-    </p>
-    <p>
-        <span class="comandos">arreglo.find(argumento => busqueda)</span> <br> Sirve para buscar un dato en un arreglo
-    </p>
-    <p>
-        <span class="comandos">arreglo.map(argumento => codigo)</span> <br> Sirve para ejecutar instrucciones a cada dato del arreglo
-    </p>
+      <!-- ------------------------Header---------------------------- -->
+      <header class="header">
+        <div class="header__logo">
+          <a href="https://maurijrp.github.io/sintaxis-basica/">
+            <img src="../images/logo-sb.png" alt="Logo de sintaxis basica">
+          </a>
+        </div>
+        <nav class="header__nav">
+          <ul class="header__ul">
+            <li class="header__li">
+              <a href="https://maurijrp.github.io/sintaxis-basica/" class="header__link">
+                Principal
+              </a>
+            </li>
+            <li class="header__li">
+              <a href="#footer" class="header__link">
+                Contacto
+              </a>
+            </li>
+            <li class="header__li">
+              <a href="#" class="header__link">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <i class="fas fa-bars"></i>
+        </nav>
+      </header>
+  <h1>Sintaxis JavaScript (Lenguaje de tipado dinamico, Diferencia mayusculas y minusculas)</h1>
+  <h2>Mostrar texto</h2>
+  <p>
+    <span class="comandos">Console.log()</span> <br>Mostrar en consola
+  </p>
+  <p>
+    <span class="comandos">Alert()</span> <br> Mostrar alerta
+  </p>
+  <p>
+    <span class="comandos">Prompt()</span> <br> Regresa el dato ingresado
+  </p>
+  <p>
+    <span class="comandos">Document.write(texto)</span> Muestra datos en el html
+  </p>
+  <h2>Variables y Constantes</h2>
+  <p>
+    <span class="comandos">Let</span> <br> Declarar una variable, Tienen alcanze dentro del bloque mas proximo
+  </p>
+  <p>
+    <span class="comandos">Var</span> <br> Declarar una variable, Tienen alcanze dentro de la funcion mas proxima
+  </p>
+  <p>
+    <span class="comandos">Const</span> <br> Declarar una constante, Tienen alcanze dentro del bloque mas proximo
+  </p>
+  <p>
+    <span class="comandos">Booleanos Con Valor False</span> <br> Undefined, NaN, null, 0, .0, "", false
+  </p>
+  <h2>Tipos de datos</h2>
+  <p>
+    <span class="comandos">Typeof</span> <br> Devuelve el tipo de dato de una variable
+  </p>
+  <p>
+    <span class="comandos">undefined</span> <br> Valor y tipo undefined, es cuando no definimos un valor a la variable
+  </p>
+  <p>
+    <span class="comandos">null</span> <br> Tipo de dato object, valor asignable, indica la ausencia de valor
+  </p>
+  <p>
+    <span class="comandos">NaN</span> <br> No es un numero
+  </p>
+  <p>
+    <span class="comandos">Infinity</span> <br> Valor infinito, da como resultado de una division entre 0
+  </p>
+  <h2>Operadores De Comparacion</h2>
+  <p>
+    <span class="comandos">===</span> <br> Comparar Tipo De Dato
+  </p>
+  <h2>Operadores Logicos</h2>
+  <p>
+    <span class="comandos">&&</span> <br> And
+  </p>
+  <p>
+    <span class="comandos">||</span> <br> Or
+  </p>
+  <p>
+    <span class="comandos">!</span> <br> Not
+  </p>
+  <h2>Condicionales</h2>
+  <p>
+    <span class="comandos">If(condicion){}</span> <br> Condiciona una opcion
+  </p>
+  <p>
+    <span class="comandos">Else if(condicion){}</span> <br> Condiciona mas de 1 opcion
+  </p>
+  <p>
+    <span class="comandos">Else{}</span> <br> Condicion Sino
+  </p>
+  <h2>Ciclos</h2>
+  <p>
+    <span class="comandos">While(condicion){}</span> <br> Ciclo mientras
+  </p>
+  <p>
+    <span class="comandos">Do{Instrucciones} while(condicion);</span> <br> Ciclo hacer mientras
+  </p>
+  <p>
+    <span class="comandos">For((VarInicial);(Condicion);(Incremento))</span> <br> Ciclo para
+  </p>
+  <h2>Funciones</h2>
+  <p>
+    <span class="comandos">Function (nombre)(){instrucciones}</span> <br> Declarar funciones
+  </p>
+  <p>
+    <span class="comandos">Function (){}</span> <br> Declarar funcion vacia, sirve para llamar a una funcion dentro de una funcion
+  </p>
+  <p>
+    <span class="comandos">nombre()</span> <br> Llamar funcion
+  </p>
+  <p>
+    <span class="comandos">return</span> <br> Sirve para regresar datos de una funcion, interrumpe la funcion al ejecutarse
+  </p>
+  <p>
+    <span class="comandos">Parametros</span> <br> Es la variable que colocamos al definir la funcion, si se pone, es obligatorio llenarlos
+  </p>
+  <p>
+    <span class="comandos">Argumentos</span> <br> Son los valores que le pasamos para llenar los parametros
+  </p>
+  <p>
+    <span class="comandos">Arguments[posicion]</span> <br> Permite usar argumentos que no estan definidos en los parametros
+  </p>
+  <h2>Arrows</h2>
+  <P>
+    <span class="comandos">let (nombre de la funcion) = (parametros)={instrucciones}</span> <br> Las arrows son una alternativa a las funciones, sirven para no hacer modificaciones del contexto
+  </P>
+  <h2>This</h2>
+  <p>
+    <span class="comandos">This.()</span> <br> Sirve para saver el contexto en el que se esta
+  </p>
+  <P>
+    <span class="comandos">function (nombre_opcional).call(contexto a asignar, argumentos)</span> <br> Sirve para asignar el contexto que deseamos a una funcion
+  </P>
+  <P>
+    <span class="comandos">function (nombre_opcional).apply(contexto a asignar, [argumentos])</span> <br> Sirve para asignar el contexto que deseamos a una funcion, los argumentos se escriben en forma de arreglo
+  </P>
+  <p>
+    <span class="comandos">nombre_funcion(llamar_funcion.bind(contexto a asignar))</span> <br> Sirve para asignar el contexto que deseamos a una funcion al momento de llamarla
+  </p>
+  <h2>Arreglos</h2>
+  <p>
+    <span class="comandos">let (nombre) = [datos]</span> <br> Declarar un arreglo
+  </p>
+  <p>
+    <span class="comandos">arreglo[indice]</span> <br> Devuelve el dato que hay en el indice
+  </p>
+  <p>
+    <span class="comandos">arreglo.length</span> <br> Devuelve la longitud del arreglo menos uno
+  </p>
+  <p>
+    <span class="comandos">arreglo.forEach(function(argumento){})</span> <br> Es otra alternativa al ciclo for
+  </p>
+  <p>
+    <span class="comandos">arreglo.filter(function(argumento){filtro})</span> <br> Sirve para hacer una filtracion en los datos del arreglo
+  </p>
+  <p>
+    <span class="comandos">arreglo.find(argumento => busqueda)</span> <br> Sirve para buscar un dato en un arreglo
+  </p>
+  <p>
+    <span class="comandos">arreglo.map(argumento => codigo)</span> <br> Sirve para ejecutar instrucciones a cada dato del arreglo
+  </p>
 </body>
 </html>
