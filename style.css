@@ -36,6 +36,7 @@ a {
   align-items: center;
   position: sticky;
   top: 0;
+  /* z-index: 100; */
 }
 .header__logo {
   /* display: inline; */
@@ -154,7 +155,7 @@ a {
   width: 80%;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(4, 4fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 3em 0;
   column-gap: 1em;
 }
@@ -219,6 +220,7 @@ a {
   padding: .3em 1em;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
 }
 .footer__button:hover {
   font-size: 1.3em;
@@ -315,7 +317,7 @@ a {
     font-size: 6em;
   }
   .team__section {
-    grid-template-columns: repeat(3, 3fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
   }
   .subtheme {
@@ -353,14 +355,16 @@ a {
     border-bottom: 2px solid lightgray;
   }
   .header__ul{
-    display: none;
-  }
-  .header__nav:hover .header__ul {
     display: block;
     width: 100%;
     position: absolute;
     background: #272727;
     top: 9vh;
+    left: 100vw;
+    transition: left .8s;
+    /* z-index: -10; */
+  }
+  .header__nav:hover .header__ul {
     left: 0;
   }
   .header__li {
