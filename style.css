@@ -29,12 +29,12 @@ a {
   display: flex;
   width: 100%;
   margin: 0%;
-  background-color: #171717;
+  position: sticky;
+  background: #171717;
   height: 9vh;
   color: white;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   top: 0;
 }
 .header__logo {
@@ -353,15 +353,20 @@ a {
     border-bottom: 2px solid lightgray;
   }
   .header__ul{
-    display: none;
-  }
-  .header__nav:hover .header__ul {
     display: block;
     width: 100%;
     position: absolute;
-    background: #272727;
-    top: 9vh;
+    background: #171717;
     left: 0;
+    top: -100vw;
+    transition: top .8s, color 1s;
+    z-index: 0;
+    color: #171717;
+  }
+  .header__nav:hover .header__ul {
+    display: block;
+    top: 9vh;
+    color: #fff;
   }
   .header__li {
     line-height: 3em;
