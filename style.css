@@ -29,12 +29,12 @@ a {
   display: flex;
   width: 100%;
   margin: 0%;
-  background-color: #171717;
+  position: sticky;
+  background: #171717;
   height: 9vh;
   color: white;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
   top: 0;
   /* z-index: 100; */
 }
@@ -358,14 +358,17 @@ a {
     display: block;
     width: 100%;
     position: absolute;
-    background: #272727;
-    top: 9vh;
-    left: 100vw;
-    transition: left .8s;
-    /* z-index: -10; */
+    background: #171717;
+    left: 0;
+    top: -100vw;
+    transition: top .8s, color 1s;
+    z-index: 0;
+    color: #171717;
   }
   .header__nav:hover .header__ul {
-    left: 0;
+    display: block;
+    top: 9vh;
+    color: #fff;
   }
   .header__li {
     line-height: 3em;
