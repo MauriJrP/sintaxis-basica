@@ -355,10 +355,6 @@ a {
     line-height: 8vh;
     padding: 0 3vh;
   }
-  .fa-bars:hover {
-    border-left: 2px solid lightgray;
-    border-bottom: 2px solid lightgray;
-  }
   .header__ul{
     display: block;
     width: 100%;
@@ -370,7 +366,7 @@ a {
     z-index: 0;
     color: #171717;
   }
-  .header__nav:hover .header__active {
+  .header__ul-active {
     display: block;
     top: 9vh;
     color: #fff;
