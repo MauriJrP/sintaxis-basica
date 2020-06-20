@@ -37,7 +37,7 @@ a {
   justify-content: space-between;
   align-items: center;
   top: 0;
-  /* z-index: 100; */
+  z-index: 10;
 }
 .header__logo {
   /* display: inline; */
@@ -60,10 +60,10 @@ a {
   /* font-size: 1.1em; */
 }
 .header__li:hover {
-  border-top: 1px solid lightgray;
-  border-bottom: 1px solid lightgray;
-  align-items: center;
+  /* border: 1px solid lightblue; */
   color: #ffee00;
+  outline: 1px solid #fff;
+  align-items: center;
   /* cursor: pointer; */
 }
 .header__link {
@@ -117,9 +117,11 @@ a {
   max-height: 12rem;
 }
 .grid__link-card:hover {
+  transition: -webkit-transform .1s;
   box-shadow: 1.5vh 1.5vh 10px 0px black;
-  font-size: 1.1em;
+  /* font-size: 1.1em; */
   background-position: right center;
+  -webkit-transform:scale(1);transform:scale(1.02);
 }
 .card__subtitle {
   font-size: 2em;
@@ -138,6 +140,7 @@ a {
   cursor: pointer;
 }
 .card__add:hover {
+  transition: all .2s;
   background-size: 125px;
   border-width: .3rem;
 }
@@ -159,13 +162,14 @@ a {
   /* min-height: 75vh; */
 }
 .team__join {
-  margin: 1%;
+  margin: 3% 2%;
   padding: 1% 2%;
   margin-right: 0%;
   width: 20%;
   background: #ffb4a2;
   border-radius: 1em;
   text-align: center;
+  max-height: auto;
 }
 .team__join-title {
   margin: 0;
@@ -200,9 +204,12 @@ a {
   background: #ffffff;
 }
 .team__card:hover {
-  box-shadow: 1vh 1vh 10px 0px black;
-  background-position: right center;
-  font-size: 1.05em;
+  transition: -webkit-transform .2s;
+  /* box-shadow: 1vh 1vh 10px 0px black; */
+  /* background-position: right center; */
+  /* font-size: 1.05em; */
+  /* background: #ffb4a2; */
+  -webkit-transform:scale(1);transform:scale(1.05);
 }
 .team__photo {
   padding-bottom: 2em;
@@ -311,10 +318,12 @@ a {
   text-align: center;
 }
 .subtheme__card {
-  max-height: 64px;
-  border: 3px solid black;
+  max-height: 62px;
+  border: 2px solid black;
   transition: all 1.5s, box-shadow .4s;
   overflow: hidden;
+  background: #ffbcbc;
+  border-radius: 10px;
 }
 .subtheme__card:hover{
   box-shadow: 1.5vh 1.5vh 10px 0px #171717;
