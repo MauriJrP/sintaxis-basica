@@ -20,3 +20,6 @@ function hamburgerMenu() {
         menu.className = 'header__ul';
     }
 };
+
+ScrollReveal().reveal('.card', {distance: '100%', origin: 'left', opacity: null, reset: true, delay: 200});
+ScrollReveal().reveal('.team__card', {delay: 300, reset: true});
