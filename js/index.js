@@ -21,5 +21,6 @@ function hamburgerMenu() {
     }
 };
 
-ScrollReveal().reveal('.card', {distance: '100%', origin: 'left', opacity: null, reset: true, delay: 200});
+// Scroll Reveal effect -------------------------------------------------------------
+ScrollReveal().reveal('.left-scroll', {distance: '50%', origin: 'left', opacity: null, reset: true, delay: 200});
 ScrollReveal().reveal('.team__card', {delay: 300, reset: true});

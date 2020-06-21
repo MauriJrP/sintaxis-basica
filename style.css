@@ -7,6 +7,7 @@ body {
   background-image: linear-gradient( 109.7deg,  rgba(229,0,57,1) 1.8%, rgba(162,91,182,1) 90.2% );
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans TC', sans-serif;
 }
 body::-webkit-scrollbar {
   width: .7rem;
@@ -92,8 +93,8 @@ a {
 }
 .main__title {
   margin: auto;
-  width: 70%;
-  font-size: 9em;
+  width: 80%;
+  font-size: 8em;
   color: white;
 }
 /* ----------------Estilos de la grilla----------------- */
@@ -117,11 +118,11 @@ a {
   max-height: 12rem;
 }
 .grid__link-card:hover {
-  transition: -webkit-transform .1s;
-  box-shadow: 1.5vh 1.5vh 10px 0px black;
+  transition: transform .1s;
+  box-shadow: .7vw .7vw 10px 0px black;
   /* font-size: 1.1em; */
-  background-position: right center;
-  -webkit-transform:scale(1);transform:scale(1.02);
+  /* background-position: right center; */
+  transform:scale(1);transform:scale(1.02);
 }
 .card__subtitle {
   font-size: 2em;
@@ -141,8 +142,8 @@ a {
 }
 .card__add:hover {
   transition: all .2s;
-  background-size: 125px;
-  border-width: .3rem;
+  background-size: 120px;
+  border-width: .25rem;
 }
 /* -----------------------Team--------------------- */
 .title-section {
@@ -263,15 +264,15 @@ a {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  background-color: #48e;
 }
 .footer__button:hover {
-  font-size: 1.3em;
-  margin-right: -5px;
-  background-color: #48e;
+  transition: -webkit-transform .1s;
+  -webkit-transform:scale(1);transform:scale(1.05);
+  background-color: #26c;
 }
 .footer__button:focus {
   outline: none;
-  background-color: #26c;
 }
 /* ----------------- Estilos de la descripcion ----------- */
 .description {
@@ -338,7 +339,8 @@ a {
 }
 .subtheme__comands h4{
   margin: 0;
-  background: white;
+  background: #900c3f;
+  color: #eee;
   font-size: 1.2em;
 }
 /* -----------------Responsive-iPad--------------- */
@@ -438,6 +440,9 @@ a {
     line-height: 3em;
     font-size: 1.5em;
   }
+  .main__title {
+    font-size: 3.5em;
+  }
   .grid {
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(250px, auto);
@@ -450,9 +455,6 @@ a {
   }
   .header__logo {
     padding-left: .5em;
-  }
-  .main__title {
-    font-size: 4em;
   }
   .card {
     max-height: 250px;
@@ -471,7 +473,7 @@ a {
   }
   .title-section {
     text-align: center;
-    font-size: 2.6em;
+    font-size: 2em;
     margin: 0;
     background-color: #171717;
     line-height: 2;
@@ -481,9 +483,11 @@ a {
   .contribution {
     width: 70%;
   }
-  /* .footer__button */
+  .footer__button {
+    font-size: 1em;
+  }
   .footer__button:hover {
-    /* font-size: 1em; */
+    font-size: 1em;
     /* margin-right: .5em; */
   }
 /* --------------------Sintaxis Responsive-------------------------- */
