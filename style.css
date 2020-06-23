@@ -23,8 +23,9 @@ a {
 }
 .container {
   padding: 0%;
-  margin: 0%;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1920px;
 }
 /* ------------------Header----------------------------- */
 .header {
@@ -82,7 +83,7 @@ a {
   height: 91vh;
   width: 100%;
 }
-.main__index {
+.main__background {
   background-image: url(images/fondo-2.jpg);
 
 }
